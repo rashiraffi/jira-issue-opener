@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "JIRA Issue Opener",
+  "version": "1.0",
+  "description": "Quickly open JIRA issues with pre-filled host and project code.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "JIRA Issue Opener"
+  },
+  "permissions": ["storage"]
+}

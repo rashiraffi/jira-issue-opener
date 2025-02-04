@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JIRA Issue Opener</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-width: 250px;
+      padding: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <label for="hostInput">JIRA Host</label>
+  <input list="hostDatalist" id="hostInput" placeholder="name.atlassian.net">
+  <datalist id="hostDatalist"></datalist>
+
+  <label for="projectInput">Project Code</label>
+  <input list="projectDatalist" id="projectInput" placeholder="EPP">
+  <datalist id="projectDatalist"></datalist>
+
+  <label for="issueInput">Issue Number</label>
+  <input type="text" id="issueInput" placeholder="1304">
+
+  <button id="openButton">Open Issue</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
